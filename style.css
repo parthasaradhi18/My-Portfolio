@@ -1,0 +1,160 @@
+/* General Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  background:url(portfolio-background-header.jpg);
+  color: #000000;
+}
+
+.hero {
+
+  color: rgb(12, 12, 12);
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+}
+
+.navbar {
+  background: #222;
+  color: white;
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  list-style: none;
+  padding: 22px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+.main {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.about, .projects, .contact {
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.about p {
+  justify-content: center;
+  text-align: center;
+}
+
+
+.project-grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  flex: 1 1 30%;
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+  
+}
+
+.card:hover {
+  transform: scale(1.03);
+  background: #222;
+}
+
+.card h3 {
+  margin: 15px 0 5px;
+}
+
+form {
+  justify-content: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input, textarea {
+  padding: 10px;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+button {
+  background: #333;
+  color: white;
+  padding: 10px;
+  font-size: 1rem;
+  border:none;
+  border-radius: 100px;
+  cursor: pointer;
+  width: 50% min-content;
+}
+
+
+footer {
+  text-align: center;
+  background: #222;
+  color: white;
+  padding: 20px;
+  font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: row;
+    gap: 25px;
+    padding: 2px;
+  }
+  img {
+  max-width: 100%;
+  height: auto;
+}
+
+  .navbar li {
+    margin: 10px 0;
+  }
+
+
+  .project-grid {
+    flex-direction: column;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  form {
+    width: 100%;
+  }
+}
